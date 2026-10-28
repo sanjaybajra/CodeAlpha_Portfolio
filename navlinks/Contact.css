@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b12;
+    color: #f5f3ff;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    color: white;
+}
+#menubar i{
+  display: none;
+  
+}
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:	rgb(160, 32, 240);
+    height: 4rem;
+    width: 4rem;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-links a:hover {
+    color: 	rgb(160, 32, 240);
+}
+.btn{
+    background-color: 	rgb(160, 32, 240);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+.btn:hover{
+    background-color: transparent;
+    color: 	rgb(160, 32, 240);
+    border: 1px solid 	rgb(160, 32, 240);
+    cursor: pointer;
+}
+
+
+.contact-section {
+    min-height: 100vh;
+  
+    
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading > p:first-child {
+    color: #c084fc;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.contact-heading h1 span {
+    color: #a855f7;
+}
+
+.contact-heading > p:last-child {
+    color: #aaa7bb;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    padding: 35px;
+    background: #13131f;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+}
+
+.contact-info h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #aaa7bb;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info > span {
+    font-size: 24px;
+}
+
+.info h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info p {
+    color: #aaa7bb;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0b0b12;
+    color: white;
+    border: 1px solid #292638;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a855f7;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 14px;
+    background: linear-gradient(135deg, #9333ea, #c084fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(168, 85, 247, 0.2);
+}
+
+#formStatus {
+    color: #c084fc;
+    font-size: 13px;
+}
+
+.footer {
+    background: #0b0b12;
+    color: #aaa7bb;
+    padding: 25px 8%;
+    border-top: 1px solid rgba(160, 32, 240, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    font-size: 13px;
+}
+
+.footer p span {
+    color: rgb(160, 32, 240);
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a,
+.back-to-top {
+    color: #aaa7bb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.back-to-top:hover {
+    color: rgb(160, 32, 240);
+}
+
+.back-to-top {
+    color: rgb(160, 32, 240);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 5%;
+        gap: 15px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .contact-section {
+        padding: 45px 5%;
+    }
+
+    .contact-heading h1 {
+        font-size: 36px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 22px;
+        gap: 25px;
+    }
+}
